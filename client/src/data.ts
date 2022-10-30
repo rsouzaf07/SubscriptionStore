@@ -3,7 +3,7 @@ export const carouselItens = [
         id: 1,
         img: "./src/assets/saladeestar.jpg",
         title: "ELEGÂNCIA E PRATICIDADE",
-        desc: "Tenha os móveis com os melhores acabamentos para o seu lar com a vantagem de troca-los quando quiser!"
+        desc: "Tenha os móveis de melhor qualidade com a vantagem de troca-los quando quiser!"
     },
     {
         id: 2,
@@ -15,6 +15,6 @@ export const carouselItens = [
         id: 3,
         img: "./src/assets/escritorio2.jpg",
         title: "PARA TODOS OS GOSTOS",
-        desc: "Do clássico ao moderno, seu espaço do jeito que você sempre desejou. "
+        desc: "Do clássico ao moderno, seu espaço do seu jeito! "
     }
 ]
