@@ -18,3 +18,21 @@ export const carouselItens = [
         desc: "Do clássico ao moderno, seu espaço do seu jeito! "
     }
 ]
+
+export const CategoriesBanner = [
+    {
+        id: 1,
+        img: "./src/assets/lar.jpg",
+        title: "Móveis para o lar"
+    },
+    {
+        id: 2,
+        img: "./src/assets/homeoffice.jpg",
+        title: "Móveis para escritório"
+    },
+    {
+        id: 1,
+        img: "./src/assets/corporativo.jpg",
+        title: "Móveis para corporativo"
+    }
+]

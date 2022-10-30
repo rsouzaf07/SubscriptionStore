@@ -22,11 +22,11 @@ export default function HeaderText() {
 
   return (
     
-    <section className='relative h-screen flex overflow-hidden w-screen'>
+    <section className='relative h-[500px] flex overflow-hidden w-screen'>
     
     {carouselItens.map((item, index) => (
       
-      <div key={index}>
+      <div key={index} >
         {index === carouselIndex && 
         (
         <>
