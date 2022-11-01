@@ -23,17 +23,20 @@ export const CategoriesBanner = [
     {
         id: 1,
         img: "./src/assets/lar.jpg",
-        title: "Móveis para o lar"
+        title: "Móveis para o lar",
+        category: "casa"
     },
     {
         id: 2,
         img: "./src/assets/homeoffice.jpg",
-        title: "Móveis para escritório"
+        title: "Móveis para escritório",
+        category: "escritório"
     },
     {
         id: 1,
         img: "./src/assets/corporativo.jpg",
-        title: "Móveis para corporativo"
+        title: "Móveis para corporativo",
+        category: "corporativo"
     }
 ]
 
