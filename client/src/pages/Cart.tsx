@@ -8,7 +8,7 @@ export default function Cart() {
   return (
     <div>
       <Navbar />
-      <div className='flex'>
+      <div className='md:flex'>
         <ProductCart />
         <CheckOut />
       </div>

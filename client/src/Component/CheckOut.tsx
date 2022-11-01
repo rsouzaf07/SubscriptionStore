@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function CheckOut() {
   return (
-    <section className='border-2 h-[500px]  w-[320px] my-[96px] '>
+    <section className='border-2 h-[500px] w-[320px] max-md:mx-auto my-[96px] '>
       <h2 className='mx-2 px-2 mt-5 font-bold pb-[2px] border-b-2'>Valor total:</h2>
       <div className='flex mx-2 px-2 py-10 justify-between border-b-2'>
         <p>Subtotal</p>
