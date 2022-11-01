@@ -3,9 +3,11 @@ import { GitHub, LinkedIn } from '@material-ui/icons'
 export default function footer() {
   return (
     <>
+    {/* Container footer */}
     <footer className='bg-[#404040] px-20 py-10  text-white'>
-          <div className='flex'>
-            <section className='flex-1 '>
+          <div className='block md:flex'>
+            {/* About us */}
+            <section className='mb-5 md:flex-1 '>
                 <p className='font-bold text-xl mb-3'>Entre em contato com a gente:</p>
                 <ul>
                     <li>
@@ -19,13 +21,17 @@ export default function footer() {
                     </li>
                 </ul>
             </section>
+
+            {/* NewsLetter */}
             <section className='  flex-1 '>
                 <h2 className='font-bold text-xl mb-3'>ASSINE NOSSA NEWSLETTER</h2>
                 <p className='mb-3 '>Quer saber todas as novidades em primeira mão? Assine nossa Newsletter e tenha tudo no seu email.</p>
                 <input type='email' className='rounded mr-10 bg-[#64748B]'/>
-                <button className='px-5 py-1 rounded-md bg-[#EE7DDC]'>Assinar</button>
+                <button className='my-1 px-5 py-1 rounded-md bg-[#EE7DDC]'>Assinar</button>
             </section>
           </div>
+
+          {/* Social media */}
           <section>
             <h2 className='font-bold text-xl my-3' >Nos encontre em nossas redes sociais:</h2>
             <a href='https://github.com/rsouzaf07'>
