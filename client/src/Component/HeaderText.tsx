@@ -22,7 +22,8 @@ export default function HeaderText() {
 
   return (
     
-    <section className='relative h-[500px] flex overflow-hidden w-screen'>
+    <section className='relative h-[300px] md:h-[500px] flex overflow-hidden w-screen'>
+    
     
     {carouselItens.map((item, index) => (
       
@@ -30,10 +31,12 @@ export default function HeaderText() {
         {index === carouselIndex && 
         (
         <>
-        <img src={item.img} className='flex w-screen h-[500px]'/>
-        <div className='absolute top-0 left-0 bg-[rgba(0,0,0,0.7)] w-[600px] h-[500px] text-center text-white' >
-          <h2 className='text-5xl font-bold mt-20'>{item.title}</h2>
-          <p className='text-left text-3xl mt-20 mx-10 '>{item.desc}</p>
+        {/* image from a map */}
+        <img src={item.img} className='flex w-screen h-[300px] md:h-[500px]'/>
+        {/* container title */}
+        <div className='h-[300px] absolute top-0 left-0 bg-[rgba(0,0,0,0.7)] md:w-[600px] md:h-[500px] text-center text-white' >
+          <h2 className='text-2xl md:text-5xl font-bold my-5 md:mt-20'>{item.title}</h2>
+          <p className='text-left text-lg md:text-3xl md:mt-20 mx-10 '>{item.desc}</p>
           <button className='mt-20 px-5 py-3 bg-[#EE7DDC] rounded-lg'>Assine já</button>
         </div>
         </>
