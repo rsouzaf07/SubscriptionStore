@@ -4,10 +4,13 @@ import { HotProducts } from '../data'
 export default function Products() {
   return (
     <div>
+      {/* Title */}
         <h2 className='text-center font-bold text-4xl mb-20'>Produtos mais assinados! </h2>
       <section className='flex flex-wrap m-10 mx-auto '>
+       {/* Container Product returning from map  */}
         {HotProducts.map((item) => (
-            <section key={item.id} className='m-2 mb-10 cursor-pointer overflow-hidden hover:scale-105'>
+            
+            <section key={item.id} className='m-auto md:m-2 mb-10 cursor-pointer overflow-hidden hover:scale-105'>
                 <figure>
                     <img src={item.img} className='w-[250px] h-[200px]' />
                     <section className='ml-2'>
