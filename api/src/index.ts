@@ -9,6 +9,7 @@ AppDataSource.initialize().then(() => {
 
     app.use(express.json())
 
+
     app.get('/', (req,res) => {
         return res.json("Works!")
     })
