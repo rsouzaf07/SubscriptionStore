@@ -1,5 +1,6 @@
 import express from "express";
 import { AppDataSource } from "./data-souce";
+import routes from "./routes";
 
 // Initializing conection with database 
 AppDataSource.initialize().then(() => {
@@ -9,6 +10,7 @@ AppDataSource.initialize().then(() => {
 
     app.use(express.json())
 
+    app.use(routes)
 
     app.get('/', (req,res) => {
         return res.json("Works!")

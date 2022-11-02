@@ -26,8 +26,8 @@ export class Product {
     @Column({type: 'float', nullable: false})
     price: Number
 
-    @Column({type: 'timestamp'})
-    createdAt: Timestamp
+    @Column({type: 'timestamp', default: 'now()'})
+    createdAt: Date
 
     //required for table relationship
     

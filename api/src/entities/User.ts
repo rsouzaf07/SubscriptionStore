@@ -1,3 +1,4 @@
+import { networkInterfaces } from "os";
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn, Timestamp } from "typeorm";
 import { Cart } from "./Cart";
 import { Order } from "./Order";
@@ -18,10 +19,10 @@ export class User {
     email: string
 
     @Column({type: 'text', nullable: false})
-    senha: string
+    password: string
     
-    @Column({type: 'timestamp'})
-    createdAt: Timestamp
+    @Column({type: 'timestamp', default: 'now()'})
+    createdAt: Date
 
     @OneToMany(() => Cart, cart => cart.user)
     cart: Cart[]
