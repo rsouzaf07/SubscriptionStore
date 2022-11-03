@@ -69,5 +69,42 @@ export class ProductController {
         } 
     }
 
+    //Search, sort and categories products
+    async searchProducts (req: Request, res: Response) {
 
+        try {
+            const builder = productRepository.createQueryBuilder('Products')
+
+            //Search products by title
+            if(req.query.s) {
+                builder.where("Products.title LIKE :s ", {s: `%${req.query.s}%`})
+            }
+
+            //get products by category
+            if(req.query.category) {
+                builder.where(":category = ANY (Products.categories)", {category: `${req.query.category}`})
+            }
+
+            //sorting products
+            const sortTitle : any = req.query.titlesort
+            const sortPrice : any = req.query.pricesort
+
+            //sort products by title
+            if (sortTitle) {
+                builder.orderBy("Products.title", sortTitle.toUpperCase())
+            
+            //sort products by price
+            } else if (sortPrice) {
+                builder.orderBy("Products.price", sortPrice.toUpperCase())
+            }
+
+            res.send(await builder.getMany())
+        } catch (error) {
+            console.log(error)
+            return res.status(500).json({message: 'Erro interno do servidor'})
+        }
+
+    }
+
+    
 }
