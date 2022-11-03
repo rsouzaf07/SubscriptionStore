@@ -12,7 +12,7 @@ export default function Categories() {
         {CategoriesBanner.map((item) => (
             <>
             {/* return data from map */}
-            <Link to= {`/products/${item.category}`}> 
+            <Link to= {`/products?category=${item.category}`}> 
             <div key={item.id} className='m-2 mb-20 overflow-hidden hover:scale-105'>
                 <figure className=''>
                     <img src={item.img} className='m-auto h-[200px] w-[250px] md:h-[380px] md:w-[380px] cursor-pointer' />

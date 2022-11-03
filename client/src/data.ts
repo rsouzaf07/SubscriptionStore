@@ -24,19 +24,19 @@ export const CategoriesBanner = [
         id: 1,
         img: "./src/assets/lar.jpg",
         title: "Móveis para o lar",
-        category: "casa"
+        category: "home"
     },
     {
         id: 2,
         img: "./src/assets/homeoffice.jpg",
         title: "Móveis para escritório",
-        category: "escritório"
+        category: "office"
     },
     {
         id: 1,
         img: "./src/assets/corporativo.jpg",
         title: "Móveis para corporativo",
-        category: "corporativo"
+        category: "corporative"
     }
 ]
 
@@ -97,6 +97,9 @@ export const HotProducts = [
     }
     
 ]
+
+
+
 
 export const ProductsItens= [
     {
