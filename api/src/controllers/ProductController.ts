@@ -76,7 +76,7 @@ export class ProductController {
             const builder = productRepository.createQueryBuilder('Products')
 
             //Search products by title
-            if(req.query.s) {
+                if(req.query.s) {
                 builder.where("Products.title LIKE :s ", {s: `%${req.query.s}%`})
             }
 
