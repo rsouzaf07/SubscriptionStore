@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
@@ -68,7 +69,9 @@ export default function Products() {
                       <section className='ml-2'>
                           <p className='mt-2 text-xl'>{title}</p>
                           <p className='mb-2'> R$ {price}/mês</p>
-                          <button className='bg-[#ED7CDB] px-5 py-3 rounded'>Mais Informação!</button>
+                          <Link to={`/product/${id}`}>
+                            <button className='bg-[#ED7CDB] px-5 py-3 rounded'>Mais Informação!</button>
+                          </Link>
                       </section>
                   </figure>
               </section>
