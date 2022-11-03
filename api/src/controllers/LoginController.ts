@@ -12,7 +12,7 @@ export class LoginController {
         const {username , password} = req.body
 
         //search if the username exists in the database
-        const user = await userRepository.findOneBy({username })
+        const user = await userRepository.findOneBy({ username })
         
         //verify if the username or password already exists in the database
         if (!user ) {

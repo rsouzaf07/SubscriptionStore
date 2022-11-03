@@ -15,6 +15,9 @@ export class User {
     @Column({type: 'text', unique: true, nullable: false})
     username: string
 
+    @Column({type: 'boolean', default: false, nullable: false})
+    isAdmin: boolean
+
     @Column({type: 'text', unique: true, nullable: false})
     email: string
 
