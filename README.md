@@ -91,7 +91,7 @@ yarn start
 
 ```
 
-Infelizmente, por alguns contra tempos, não tive tempo de finalizar o projeto, foram feitas todas as páginas, mas não com todas as implementações pedidas. As implementações feitas foram, página de produtos com ordenação por preço ou ordem alfabetica, página de informação do produto buscando pelo ID e a homepage.
+Infelizmente, por alguns contra tempos, não tive tempo de finalizar o projeto, foram feitas todas as páginas, mas não com todas as implementações pedidas. Foram feitas todas as rotas para requisições. As implementações feitas foram, página de produtos com ordenação por preço ou ordem alfabetica, página de informação do produto buscando pelo ID e a homepage.
 Apesar de não ter consegui fazer tudo, dei o meu o melhor, aprendi muitas coisas com esse projeto bem solicitado e robusto.
 
 
