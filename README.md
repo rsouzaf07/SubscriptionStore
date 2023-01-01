@@ -1,5 +1,7 @@
 # SubscriptionStore
 
+## Video Demo: https://www.youtube.com/watch?v=8QS0ZMFnGD0
+
 ## Sobre o projeto: 
 
 SubscriptionStore é uma aplicação full-stack feita em React e NodeJs.
